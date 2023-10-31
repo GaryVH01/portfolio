@@ -9,7 +9,7 @@
     --sat: 0%;
     --title-color: hsl(var(--hue), var(--sat), 20%);
     /* --title-color-dark: hsl(var(--hue), var(--sat), 0%); */
-    --title-color-dark: hsl(75, 46%, 51%);
+    --title-color-dark: hsl(209, 62%, 54%);
     --text-color: hsl(var(--hue), var(--sat), 46%);
     --body-color: hsl(var(--hue), var(--sat), 98%);
     --container-color: #fff;
@@ -67,7 +67,10 @@ html {
     scroll-behavior: smooth;
 }
 
-body, button, input, textarea {
+body,
+button,
+input,
+textarea {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
 }
@@ -77,7 +80,9 @@ body {
     color: var(--text-color);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: var(--title-color);
     font-weight: var(--font-semibold);
 }
@@ -112,7 +117,8 @@ img {
     margin-bottom: 4rem;
 }
 
-.section__title, .section__subtitle {
+.section__title,
+.section__subtitle {
     text-align: center;
 }
 
@@ -173,6 +179,7 @@ img {
     body {
         margin: 00 var(--header-height) 0;
     }
+
     .section {
         padding: 2rem 0 4rem;
     }
@@ -182,12 +189,11 @@ img {
     }
 }
 
-@media screen and (max-width: 576px) {
-}
+@media screen and (max-width: 576px) {}
 
 @media screen and (max-width: 350px) {
     :root {
-    --big-font-size: 2.25rem;
+        --big-font-size: 2.25rem;
     }
 
     .container {
