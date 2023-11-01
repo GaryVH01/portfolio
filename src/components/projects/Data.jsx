@@ -3,6 +3,7 @@ import OMF from "../../assets/omf-preview.png";
 import LaPanthere from "../../assets/lapanthere-preview.png";
 import Kanap from "../../assets/kanap-preview.png";
 import Kasa from "../../assets/kasa-preview.png";
+import Ancistrus from "../../assets/ancistrus-preview.png";
 
 export const projectsData = [
   {
@@ -10,20 +11,21 @@ export const projectsData = [
     image: Booki,
     title: "Projet 1 : Booki",
     category: "Frontend",
-    src: "",
+    source: "https://garyvh01.github.io/P2_Openclassroom_Booki/",
   },
   {
     id: 2,
     image: OMF,
     title: "Projet 2 : Ohmyfood",
     category: "Frontend",
+    source: "https://garyvh01.github.io/P3_Openclassroom_OhMyFood/",
   },
   {
     id: 3,
     image: LaPanthere,
     title: "Projet 3 : La panthère",
     category: "Frontend",
-    src: "https://garyvh01.github.io/P4_Openclassroom_La_Panthere/",
+    source: "https://garyvh01.github.io/P4_Openclassroom_La_Panthere/",
   },
   {
     id: 4,
@@ -42,12 +44,14 @@ export const projectsData = [
     image: Kasa,
     title: "Projet 6 : Kasa",
     category: "Frontend",
+    source: "https://kasaimmo.netlify.app/",
   },
   {
     id: 7,
-    image: LaPanthere,
+    image: Ancistrus,
     title: "Projet 7 : Ancistrus",
-    category: "Frontend",
+    category: "Frontend & Backend",
+    source: "https://ancistrus.netlify.app/",
   },
 ];
 
@@ -61,7 +65,7 @@ export const projectsNav = [
   {
     name: "Backend",
   },
-  // {
-  //   name: "C",
-  // },
+  {
+    name: "Frontend & Backend",
+  },
 ];

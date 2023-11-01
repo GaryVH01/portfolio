@@ -86,7 +86,7 @@ const Contact = () => {
         </div>
 
         <div className="contact__content">
-          <h3 className="contact__title">Formulez votre demande</h3>
+          <h3 className="contact__title">Votre demande</h3>
 
           <form onSubmit={handleSubmit} className="contact__form">
             <div className="contact__form-div">
