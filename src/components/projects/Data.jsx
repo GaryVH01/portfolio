@@ -1,63 +1,67 @@
-import Project1 from "../../assets/project1.webp";
-import Project2 from "../../assets/project2.webp";
-import Project3 from "../../assets/project3.webp";
+import Booki from "../../assets/booki-preview.png";
+import OMF from "../../assets/omf-preview.png";
+import LaPanthere from "../../assets/lapanthere-preview.png";
+import Kanap from "../../assets/kanap-preview.png";
+import Kasa from "../../assets/kasa-preview.png";
 
 export const projectsData = [
   {
     id: 1,
-    image: Project1,
+    image: Booki,
     title: "Projet 1 : Booki",
-    category: "A",
+    category: "Frontend",
+    src: "",
   },
   {
     id: 2,
-    image: Project1,
+    image: OMF,
     title: "Projet 2 : Ohmyfood",
-    category: "A",
+    category: "Frontend",
   },
   {
     id: 3,
-    image: Project3,
+    image: LaPanthere,
     title: "Projet 3 : La panthère",
-    category: "A",
+    category: "Frontend",
+    src: "https://garyvh01.github.io/P4_Openclassroom_La_Panthere/",
   },
   {
     id: 4,
-    image: Project3,
+    image: Kanap,
     title: "Projet 4 : Kanap",
-    category: "A",
+    category: "Frontend",
   },
   {
     id: 5,
-    image: Project3,
+    image: LaPanthere,
     title: "Projet 5 : Piiquante",
-    category: "B",
+    category: "Backend",
   },
   {
     id: 6,
-    image: Project3,
+    image: Kasa,
     title: "Projet 6 : Kasa",
-    category: "C",
+    category: "Frontend",
   },
   {
     id: 7,
-    image: Project3,
+    image: LaPanthere,
     title: "Projet 7 : Ancistrus",
-    category: "B",
+    category: "Frontend",
   },
 ];
 
 export const projectsNav = [
   {
-    name: "All",
+    name: "Tous",
   },
   {
-    name: "A",
+    name: "Frontend",
   },
   {
-    name: "B",
+    name: "Backend",
   },
-  {
-    name: "C",
-  },
+  // {
+  //   name: "C",
+  // },
 ];

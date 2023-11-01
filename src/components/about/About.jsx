@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 import AboutImg from "../../assets/aboutBW.jpeg";
-import CV from "../../assets/Example-Cv.pdf";
+import CV from "../../assets/cv.pdf";
 import Info from "./Info";
 
 const About = () => {
@@ -14,10 +14,10 @@ const About = () => {
         <div className="about__data">
           <Info />
           <p className="about__description">
-            Je crée des applications React au design minimaliste et j'accorde
+            Je crée des applications React au design minimaliste. J'accorde
             beaucoup d'importance à la propreté de mon code.
           </p>
-          <a download="" href={CV} className="button button--flex">
+          <a download="cv" href={CV} className="button button--flex">
             Télécharger CV
             <svg
               class="button__icon"
