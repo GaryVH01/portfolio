@@ -1,22 +1,63 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./contact.css";
 import { HiOutlineMail, HiOutlineArrowSmRight } from "react-icons/hi";
-import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm(
-      "service_s53x8mc",
-      "template_fwq8n7v",
-      form.current,
-      "cXginQ40keRVEt1YV"
-    );
-    e.target.reset();
+  /*Création d'une constante pour déclarer le modèle de l'email*/
+  const formInitialDetails = {
+    name: "",
+    email: "",
+    message: "",
   };
+
+  /*Initialisation du state */
+  const [formDetails, setFormDetails] = useState(formInitialDetails);
+  const [buttonText, setButtonText] = useState("Envoyer message");
+  const [status, setStatus] = useState({});
+
+  const onFormUpdate = (category, value) => {
+    setFormDetails({
+      ...formDetails,
+      [category]: value,
+    });
+  };
+
+  /*Fonction pour soumettre le formulaire*/
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setButtonText("En cours d'envoi...");
+    let response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(formDetails),
+    });
+    let result = await response.json();
+    setButtonText("Envoyer message");
+    setFormDetails(formInitialDetails);
+    if (result.code === 200) {
+      setStatus({ success: true, message: "Message envoyé" });
+    } else {
+      setStatus({ succes: false, message: "Une erreur s'est produite" });
+    }
+  };
+
+  /*Ancienne méthode pour envoyer un mail en utilisant emailjs => changement pour nodemailer pour envoyer sur adresse gmail*/
+
+  // const form = useRef();
+
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+
+  //   emailjs.sendForm(
+  //     "service_s53x8mc",
+  //     "template_fwq8n7v",
+  //     form.current,
+  //     "cXginQ40keRVEt1YV"
+  //   );
+  //   e.target.reset();
+  // };
 
   return (
     <section className="contact section" id="contact">
@@ -47,7 +88,7 @@ const Contact = () => {
         <div className="contact__content">
           <h3 className="contact__title">Formulez votre demande</h3>
 
-          <form ref={form} onSubmit={sendEmail} className="contact__form">
+          <form onSubmit={handleSubmit} className="contact__form">
             <div className="contact__form-div">
               <label className="contact__form-tag">Nom</label>
               <input
@@ -55,6 +96,9 @@ const Contact = () => {
                 name="name"
                 className="contact__form-input"
                 placeholder="Entrez votre nom"
+                required
+                value={formDetails.name}
+                onChange={(e) => onFormUpdate("name", e.target.value)}
               />
             </div>
 
@@ -65,6 +109,9 @@ const Contact = () => {
                 name="email"
                 className="contact__form-input"
                 placeholder="Entrez votre email"
+                required
+                value={formDetails.email}
+                onChange={(e) => onFormUpdate("email", e.target.value)}
               />
             </div>
 
@@ -76,11 +123,14 @@ const Contact = () => {
                 rows="10"
                 className="contact__form-input"
                 placeholder="Sujet de votre demande..."
+                required
+                value={formDetails.message}
+                onChange={(e) => onFormUpdate("message", e.target.value)}
               ></textarea>
             </div>
 
-            <button href="#contact" className="button button--flex">
-              Envoyer Message
+            <button type="submit" className="button button--flex">
+              {buttonText}
               <svg
                 class="button__icon"
                 xmlns="http://www.w3.org/2000/svg"
@@ -99,6 +149,7 @@ const Contact = () => {
                 ></path>
               </svg>
             </button>
+            {status.message && <p>{status.message}</p>}
           </form>
         </div>
       </div>

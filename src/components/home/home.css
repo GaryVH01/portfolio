@@ -116,6 +116,44 @@
     color: var(--title-color);
 }
 
+/* Type-writing animation */
+
+.type-writer {
+    overflow: hidden;
+    border-right: .15em solid var(--title-color-dark);
+    max-width: 365px;
+    /* curseur de la machine à écrire */
+    white-space: nowrap;
+    /* garder le texte sur une seule ligne */
+    letter-spacing: .15em;
+    animation:
+        typing 4.5s steps(40, end) both,
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: var(--title-color-dark);
+    }
+}
+
 /* BREAK POINTS */
 @media screen and (max-width: 992px) {
     .home__content {
@@ -136,6 +174,10 @@
     .home__subtitle::before {
         width: 42px;
         top: 0.8rem;
+    }
+
+    .type-writer {
+        max-width: 280px;
     }
 
     .home__description {
@@ -175,6 +217,18 @@
     .home__scroll {
         display: none;
     }
+
+    .home__subtitle::before {
+        display: none;
+    }
+
+    .type-writer {
+        max-width: 220px;
+    }
+
+    .home__subtitle {
+        padding-left: 0rem;
+    }
 }
 
 @media screen and (max-width: 350px) {
@@ -187,4 +241,5 @@
         width: 22px;
         height: 22px;
     }
+
 }

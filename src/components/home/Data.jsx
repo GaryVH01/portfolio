@@ -55,7 +55,7 @@ const Data = () => {
           ></path>
         </svg>
       </h1>
-      <h3 className="home__subtitle">Développeur Pythont</h3>
+      <h3 className="home__subtitle type-writer">Développeur Javascript</h3>
       <p className="home__description">
         Je suis développeur frontend, basé sur Lille, passionné par le
         développement créatif.
