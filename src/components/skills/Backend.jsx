@@ -44,13 +44,13 @@ const Backend = () => {
               <span className="skills__level">Débutant</span>
             </div>
           </div> */}
-          <div className="skills__data">
+          {/* <div className="skills__data">
             <HiCheckBadge />
             <div>
               <h3 className="skills__name">Git</h3>
               <span className="skills__level">Junior</span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

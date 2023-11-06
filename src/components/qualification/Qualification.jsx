@@ -85,7 +85,30 @@ const Qualification = () => {
             </div>
             <div className="qualification__data">
               <div>
+                <h3 className="qualification__title">DU Isocinétisme </h3>
+                <span className="qualification__subtitle">
+                  Université Lille 2{" "}
+                </span>
+                <div className="qualification__calendar">
+                  <HiOutlineCalendar className="qualification__calendar-icon" />
+                  2017-2018{" "}
+                </div>
+              </div>
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+            </div>
+
+            <div className="qualification__data">
+              <div></div>
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+              <div>
                 <h3 className="qualification__title">
+                  {" "}
                   Baccalauréat STI - Génie Méanique
                 </h3>
                 <span className="qualification__subtitle">
@@ -95,10 +118,6 @@ const Qualification = () => {
                   <HiOutlineCalendar className="qualification__calendar-icon" />
                   2004-2006
                 </div>
-              </div>
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
               </div>
             </div>
           </div>

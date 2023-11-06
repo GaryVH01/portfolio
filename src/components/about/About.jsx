@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
-import AboutImg from "../../assets/aboutBW.jpeg";
-import CV from "../../assets/cv.pdf";
+import AboutImg from "../../assets/mypic.jpg";
+import CV from "../../assets/CV_Gary_Vanhecke_devweb_retravaillé.pdf";
 import Info from "./Info";
 
 const About = () => {
@@ -17,7 +17,13 @@ const About = () => {
             Je crée des applications React au design minimaliste. J'accorde
             beaucoup d'importance à la propreté de mon code.
           </p>
-          <a download="cv" href={CV} className="button button--flex">
+          <a
+            download="cv"
+            href={CV}
+            className="button button--flex"
+            target="_blank"
+            rel="noreferrer"
+          >
             Télécharger CV
             <svg
               class="button__icon"

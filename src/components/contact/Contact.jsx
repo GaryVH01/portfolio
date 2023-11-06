@@ -88,7 +88,7 @@ const Contact = () => {
         <div className="contact__content">
           <h3 className="contact__title">Votre demande</h3>
 
-          <form onSubmit={handleSubmit} className="contact__form">
+          <form onSubmit={handleSubmit} className="contact__form" netlify>
             <div className="contact__form-div">
               <label className="contact__form-tag">Nom</label>
               <input
