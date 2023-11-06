@@ -38,6 +38,7 @@ export const projectsData = [
     image: LaPanthere,
     title: "Projet 5 : Piiquante",
     category: "Backend",
+    source: "https://garyvh01.github.io/P4_Openclassroom_La_Panthere/",
   },
   {
     id: 6,
