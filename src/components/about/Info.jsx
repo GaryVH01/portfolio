@@ -16,12 +16,12 @@ const Info = () => {
       <div className="about__box">
         <HiOutlineTerminal className="about__icon" />
         <h3 className="about__title">Réalisations</h3>
-        <span className="about__subtitle">8 Projets</span>
+        <span className="about__subtitle">9 Projets</span>
       </div>
       <div className="about__box">
         <HiOutlineSparkles className="about__icon" />
         <h3 className="about__title">Joignable</h3>
-        <span className="about__subtitle">Tous les jours de la semaine</span>
+        <span className="about__subtitle">Par Téléphone ou par Mail</span>
       </div>
     </div>
   );

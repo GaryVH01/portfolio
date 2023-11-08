@@ -24,6 +24,7 @@
     grid-template-columns: repeat(2, max-content);
     gap: 3rem;
     justify-content: center;
+    position: relative;
 }
 
 .project__card {
@@ -31,7 +32,30 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1.25rem;
     border-radius: 1rem;
+    transition: all 1.5s ease;
+    transform-style: preserve-3d;
 }
+
+.project__description {
+    margin-bottom: 10px;
+    max-width: 280px;
+    font-size: 12px;
+}
+
+.project__card__front:hover .projec .project__card__front {
+    backface-visibility: hidden;
+}
+
+.project__card__back {
+    backface-visibility: hidden;
+    background-color: bisque;
+}
+
+.project__card:hover .project__card__back {
+    visibility: visible;
+}
+
+
 
 .project__img {
     width: 295px;
@@ -58,7 +82,7 @@
     transition: 0.4s;
 }
 
-.project__button:hover .project__button-icon{
+.project__button:hover .project__button-icon {
     transform: translateX(0.25rem);
 }
 

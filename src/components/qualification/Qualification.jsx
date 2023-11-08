@@ -130,7 +130,9 @@ const Qualification = () => {
           >
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Développeur Web</h3>
+                <h3 className="qualification__title">
+                  Etudiant Développeur Web
+                </h3>
                 <span className="qualification__subtitle">Openclassrooms</span>
                 <div className="qualification__calendar">
                   <HiOutlineCalendar className="qualification__calendar-icon" />
