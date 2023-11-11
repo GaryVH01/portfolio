@@ -12,6 +12,7 @@ import {
 } from "react-icons/hi";
 
 const Header = () => {
+  /*---------Function to add shadow on the header after scroll--------*/
   window.addEventListener("scroll", function () {
     const header = document.querySelector(".header");
     if (this.scrollY >= 80) header.classList.add("scroll-header");
