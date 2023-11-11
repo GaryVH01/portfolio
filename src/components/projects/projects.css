@@ -42,19 +42,6 @@
     font-size: 12px;
 }
 
-.project__card__front:hover .projec .project__card__front {
-    backface-visibility: hidden;
-}
-
-.project__card__back {
-    backface-visibility: hidden;
-    background-color: bisque;
-}
-
-.project__card:hover .project__card__back {
-    visibility: visible;
-}
-
 
 
 .project__img {

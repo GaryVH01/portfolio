@@ -62,7 +62,8 @@ export const projectsData = [
     id: 7,
     image: Ancistrus,
     title: "Projet 7 : Ancistrus",
-    description: "Site vitrine pour entreprise de nettoyage de vitres (React)",
+    description:
+      "Site vitrine pour entreprise de nettoyage de vitres (React). En cours...",
     category: "Frontend & Backend",
     source: "https://ancistrus.netlify.app/",
   },
