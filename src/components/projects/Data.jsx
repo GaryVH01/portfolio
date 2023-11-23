@@ -47,8 +47,8 @@ export const projectsData = [
     title: "Projet 5 : Piiquante",
     description:
       "API REST, implémentation du CRUD, authentification (Node.js, Express, MongoDb)",
-    category: "Backend",
-    source: "https://garyvh01.github.io/P4_Openclassroom_La_Panthere/",
+    category: "Backend ... En cours de déploiement",
+    // source: "https://garyvh01.github.io/P4_Openclassroom_La_Panthere/",
   },
   {
     id: 6,
