@@ -27,6 +27,7 @@ const Contact = () => {
     e.preventDefault();
     setButtonText("En cours d'envoi...");
     let response = await fetch(
+      // Here I replace the localhost to the liveserver where I deploy the app
       "https://portfolio-back-l5i9.onrender.com/api/contact",
       {
         method: "POST",
