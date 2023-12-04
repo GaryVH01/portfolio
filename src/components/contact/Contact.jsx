@@ -26,13 +26,16 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("En cours d'envoi...");
-    let response = await fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
+    let response = await fetch(
+      "https://portfolio-back-l5i9.onrender.com//api/contact",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json;charset=utf-8",
+        },
+        body: JSON.stringify(formDetails),
+      }
+    );
     let result = await response.json();
     setButtonText("Envoyer message");
     setFormDetails(formInitialDetails);
