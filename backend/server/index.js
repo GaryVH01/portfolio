@@ -13,7 +13,13 @@ const PORT = process.env.PORT || 3004;
 connectDB(); // connexion à la database
 
 const app = express();
-app.use(cors());
+
+app.use(
+  cors({
+    origin: "https://portfolio-front-3e2k.onrender.com",
+  })
+);
+
 app.use(bodyParser.json());
 
 app.get("/api", (req, res) => {
