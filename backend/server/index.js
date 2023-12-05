@@ -14,11 +14,7 @@ connectDB(); // connexion à la database
 
 const app = express();
 
-app.use(
-  cors({
-    origin: "https://portfolio-front-3e2k.onrender.com",
-  })
-);
+app.use(cors());
 
 app.use(bodyParser.json());
 
