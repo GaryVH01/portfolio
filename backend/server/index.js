@@ -1,5 +1,5 @@
 const path = require("path");
-// const http = require("http");
+const http = require("http");
 const express = require("express");
 const cors = require("cors");
 const nodemailer = require("nodemailer");
@@ -17,13 +17,13 @@ connectDB(); // connexion à la database
 app.use(cors());
 app.use(express.json());
 
-// const server = http.createServer(app);
-// const portfoliobackend = new Server(server, {
-//   cors: {
-//     origin: "https://vanheckegary-portfolio.com/",
-//     methods: ["GET", "POST"],
-//   },
-// });
+const server = http.createServer(app);
+const portfoliobackend = new Server(server, {
+  cors: {
+    origin: "https://vanheckegary-portfolio.com/",
+    methods: ["GET", "POST"],
+  },
+});
 
 app.use(bodyParser.json());
 
@@ -34,8 +34,8 @@ app.get("/api", (req, res) => {
 // Methode get permettant de récupérer tous les mails de la base de données avec le endpoint 'api/contact'
 app.get("/api/contact", (req, res, next) => {
   mailModel
-    .find() // utilisation de la méthode find pour récupérer la liste complète des sauces
-    .then((mails) => res.status(200).json(mails)) // on renvoie le tableau de toutes les sauces
+    .find() // utilisation de la méthode find pour récupérer la liste complète des formulaires
+    .then((mails) => res.status(200).json(mails)) // on renvoie le tableau de tous les formulaires
     .catch((error) => res.status(400).json({ error: error })); // sinon on renvoie une erreur 400
 });
 
