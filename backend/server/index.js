@@ -18,12 +18,6 @@ app.use(cors());
 app.use(express.json());
 
 const server = http.createServer(app);
-const portfoliobackend = new Server(server, {
-  cors: {
-    origin: "https://vanheckegary-portfolio.com/",
-    methods: ["GET", "POST"],
-  },
-});
 
 app.use(bodyParser.json());
 
