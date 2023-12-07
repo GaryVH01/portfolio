@@ -1,4 +1,6 @@
 const path = require("path");
+const http = require("http");
+const app = express();
 const express = require("express");
 const cors = require("cors");
 const nodemailer = require("nodemailer");
@@ -12,9 +14,16 @@ const PORT = process.env.PORT || 3004;
 
 connectDB(); // connexion à la database
 
-const app = express();
-
 app.use(cors());
+app.use(express.json());
+
+const server = http.createServer(app);
+const portfoliobackend = new Server(server, {
+  cors: {
+    origin: "https://vanheckegary-portfolio.com/",
+    methods: ["GET", "POST"],
+  },
+});
 
 app.use(bodyParser.json());
 
