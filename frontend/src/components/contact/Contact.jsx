@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import "./contact.css";
 import { HiOutlineMail, HiOutlineArrowSmRight } from "react-icons/hi";
 
@@ -45,22 +45,6 @@ const Contact = () => {
       setStatus({ succes: false, message: "Une erreur s'est produite" });
     }
   };
-
-  /*Ancienne méthode pour envoyer un mail en utilisant emailjs => changement pour nodemailer pour envoyer sur adresse gmail*/
-
-  // const form = useRef();
-
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-
-  //   emailjs.sendForm(
-  //     "service_s53x8mc",
-  //     "template_fwq8n7v",
-  //     form.current,
-  //     "cXginQ40keRVEt1YV"
-  //   );
-  //   e.target.reset();
-  // };
 
   return (
     <section className="contact section" id="contact">
