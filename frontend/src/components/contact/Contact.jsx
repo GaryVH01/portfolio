@@ -75,7 +75,13 @@ const Contact = () => {
         <div className="contact__content">
           <h3 className="contact__title">Votre demande</h3>
 
-          <form onSubmit={handleSubmit} className="contact__form" netlify>
+          <form
+            onSubmit={handleSubmit}
+            className="contact__form"
+            netlify
+            name="contact"
+            method="POST"
+          >
             <div className="contact__form-div">
               <label className="contact__form-tag">Nom</label>
               <input
