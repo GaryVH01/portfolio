@@ -64,7 +64,10 @@ const Contact = () => {
                 gary.vanhecke@gmail.com
               </span>
 
-              <a href="gary.vanhecke@gmail.com" className="contact__button">
+              <a
+                href="mailto:gary.vanhecke@gmail.com"
+                className="contact__button"
+              >
                 Envoyer un message{" "}
                 <HiOutlineArrowSmRight className="contact__button-icon" />
               </a>
