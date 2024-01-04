@@ -6,6 +6,7 @@ import Kasa from "../../assets/kasa-preview.png";
 import Ancistrus from "../../assets/ancistrus-preview.png";
 import Piiquante from "../../assets/piiquante-preview.png";
 import Bootstrap from "../../assets/bootstrap-preview.png";
+import GuitarFinder from "../../assets/gf.png";
 
 export const projectsData = [
   {
@@ -46,8 +47,8 @@ export const projectsData = [
     image: Piiquante,
     title: "Projet 5 : Piiquante",
     description:
-      "API REST, implémentation du CRUD, authentification (Node.js, Express, MongoDb)",
-    category: "Backend ... En cours de déploiement",
+      "API REST (Node.js, Express, MongoDb)...En cours de déploiement",
+    category: "Backend",
     // source: "https://garyvh01.github.io/P4_Openclassroom_La_Panthere/",
   },
   {
@@ -74,6 +75,14 @@ export const projectsData = [
     description: "Utilisation du framework Bootstrap",
     category: "Frontend",
     source: "https://dreamimmo.netlify.app/",
+  },
+  {
+    id: 9,
+    image: GuitarFinder,
+    title: "Projet 9 : Guitar Finder",
+    description: "Application Nexjs + Express ... en construction",
+    category: "Frontend & Backend",
+    // source: "",
   },
 ];
 
