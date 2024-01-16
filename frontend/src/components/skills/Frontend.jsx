@@ -52,6 +52,15 @@ const Frontend = () => {
             </div>
           </div>
         </div>
+        <div className="skills_group">
+          <div className="skills__data">
+            <HiCheckBadge />
+            <div>
+              <h3 className="skills__name">Tailwind</h3>
+              <span className="skills__level">Junior</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
