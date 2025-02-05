@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 import AboutImg from "../../assets/mypic.jpeg";
-import CV from "../../assets/cv_devfront_gary_vanhecke.pdf";
+import CV from "../../assets/CV_devfront_gary_vanhecke.pdf";
 import Info from "./Info";
 
 const About = () => {
@@ -18,7 +18,7 @@ const About = () => {
             beaucoup d'importance à la propreté de mon code.
           </p>
           <a
-            download="CV_Gary_Vanhecke_devfront"
+            download="CV_devfront_gary_vanhecke.pdf"
             href={CV}
             className="button button--flex"
             target="_blank"
