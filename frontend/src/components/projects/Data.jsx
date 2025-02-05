@@ -7,6 +7,8 @@ import Ancistrus from "../../assets/ancistrus-preview.png";
 import Piiquante from "../../assets/piiquante-preview.png";
 import Bootstrap from "../../assets/bootstrap-preview.png";
 import GuitarFinder from "../../assets/gf.png";
+import Arketekt from "../../assets/arketekt.png";
+import Rabbit from "../../assets/rabbit.png";
 
 export const projectsData = [
   {
@@ -47,7 +49,7 @@ export const projectsData = [
     image: Piiquante,
     title: "Projet 5 : Piiquante",
     description:
-      "API REST (Node.js, Express, MongoDb)...En cours de déploiement",
+      "API REST (Node.js, Express, MongoDb) Serveur local, API non déployée",
     category: "Backend",
     // source: "https://garyvh01.github.io/P4_Openclassroom_La_Panthere/",
   },
@@ -63,8 +65,7 @@ export const projectsData = [
     id: 7,
     image: Ancistrus,
     title: "Projet 7 : Ancistrus",
-    description:
-      "Site vitrine pour entreprise de nettoyage de vitres (React). En cours...",
+    description: "Site vitrine pour entreprise de nettoyage de vitres (React).",
     category: "Frontend & Backend",
     source: "https://ancistrus.netlify.app/",
   },
@@ -83,6 +84,23 @@ export const projectsData = [
     description: "Application Nexjs + Express ... en construction",
     category: "Frontend & Backend",
     // source: "",
+  },
+  {
+    id: 10,
+    image: Arketekt,
+    title: "Projet 10 : Arketekt",
+    description: "Template (WEBFLOW) de site vitrine pour un ami architecte",
+    category: "Frontend",
+    source: "https://arketekt-5932cd.webflow.io/",
+  },
+  {
+    id: 11,
+    image: Rabbit,
+    title: "Projet 10 : Rabbit",
+    description:
+      "Intégration web (WEBFLOW). Copie de waze avec quelques libertés créatives.",
+    category: "Frontend",
+    source: "https://garys-fantastic-site-714723.webflow.io/",
   },
 ];
 
