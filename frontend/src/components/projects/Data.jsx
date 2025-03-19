@@ -9,6 +9,7 @@ import Bootstrap from "../../assets/bootstrap-preview.png";
 import GuitarFinder from "../../assets/gf.png";
 import Arketekt from "../../assets/arketekt.png";
 import Rabbit from "../../assets/rabbit.png";
+import Cabs from "../../assets/cabs.png";
 
 export const projectsData = [
   {
@@ -101,6 +102,15 @@ export const projectsData = [
       "Intégration web (WEBFLOW). Copie de waze avec quelques libertés créatives.",
     category: "Frontend",
     source: "https://garys-fantastic-site-714723.webflow.io/",
+  },
+  {
+    id: 12,
+    image: Cabs,
+    title: "Projet 11 : Cabs",
+    description:
+      "Site web pour particulier VTC avec réservation en ligne et Dashboard administrateur. MongoDB, Express, Javascript.",
+    category: "Frontend & Backend",
+    source: "https://cabsvtc.fr/",
   },
 ];
 
