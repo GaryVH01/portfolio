@@ -10,6 +10,8 @@ import GuitarFinder from "../../assets/gf.png";
 import Arketekt from "../../assets/arketekt.png";
 import Rabbit from "../../assets/rabbit.png";
 import Cabs from "../../assets/cabs.png";
+import MVH from "../../assets/mvh.png";
+import Grains from "../../assets/grains.jpg";
 
 export const projectsData = [
   {
@@ -111,6 +113,23 @@ export const projectsData = [
       "Site web pour particulier VTC avec réservation en ligne et Dashboard administrateur. MongoDB, Express, Javascript.",
     category: "Frontend & Backend",
     source: "https://cabsvtc.fr/",
+  },
+  {
+    id: 13,
+    image: MVH,
+    title: "Projet 12 : MVH",
+    description:
+      "Site web pour artisan peintre. Et création d'un backoffice pour la gestion administrative et gestion du contenu",
+    category: "Frontend & Backend",
+    source: "https://mvhpeinture.fr/",
+  },
+  {
+    id: 14,
+    image: Grains,
+    title: "Projet 14 : Grains d'Instants",
+    description: "Site vitrine pour photographe professionnelle",
+    category: "Frontend & Backend",
+    source: "https://www.sc3jehu6300.universe.wf/",
   },
 ];
 
